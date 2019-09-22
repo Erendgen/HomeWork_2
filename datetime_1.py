@@ -12,3 +12,8 @@ dt_now_month = dt_now_month.strftime('%Y-%m-%d')
 print(f'Сегодня: {dt_now}')
 print(f'Вчера: {dt_now_yesterday}')
 print(f'Месяц назад: {dt_now_month}')
+
+
+date_string = '01/01/17 12:10:03.234567'
+date_dt = datetime.strptime(date_string, '%d/%m/%y %H:%M:%S.%f')
+print(date_dt)
